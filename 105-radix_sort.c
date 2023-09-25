@@ -69,7 +69,7 @@ void radix_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	buff = calloc(sizeof(int));
+	buff = malloc(sizeof(int)  * size);
 	if (buff == NULL)
 		return;
 
